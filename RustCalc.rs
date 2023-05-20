@@ -7,7 +7,7 @@ fn main() {
     let mut input = String::new(); 
   
 
-println!("Adding two numbers");
+println!("Performing addition and subtraction");
     // Prompt the user to enter the value for x
         println!("Enter the value for x:"); 
         io::stdin()
@@ -37,8 +37,14 @@ println!("Adding two numbers");
 // Parse the input string to an i32 value, trimming any whitespace and handling parsing errors
     let y: i32 = input.trim().parse().expect("Invalid number"); 
 
+
+    let sum = x + y;
+    let difference = x - y;
+
+
     println!("x = {}, y = {}", x, y);
-    println!("Sum = {}", x + y );
-// Print the values of x, y and sum 
+    println!("Sum = {}", sum );
+    println!("Difference = {}", difference)
+// Print the values of x, y, sum & difference 
 
 }
